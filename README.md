@@ -4,8 +4,8 @@ Other PHYs are not supported.
 But with a little change, You can use LAN8720 PHY with STM32F407.
 
 __Note__   
-STM is currently rebuilding Ethernet support with an external PYH.
-In the future, Ethernet support using an external PYH will change significantly and may be supported differently.
+STM is currently rebuilding Ethernet support with an external PHY.
+In the future, Ethernet support using an external PHY will change significantly and may be supported differently.
 This is an interim action until officially supported.
 
 # Hardware requirements
