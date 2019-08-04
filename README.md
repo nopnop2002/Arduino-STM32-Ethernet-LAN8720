@@ -4,7 +4,7 @@ STM provides an Ethernet library for Arduino_Core_STM32, but it supports only LA
 With a little change, You can use LAN8720 PHY with STM32F407.
 
 __Note__   
-STM is currently rebuilding Ethernet support with an external PHY.
+STM is currently rebuilding external PHY Ethernet support.
 In the future, Ethernet support using an external PHY will change significantly and may be supported differently.
 This is an interim action until officially supported.   
 When STM become officially supports external PHY Ethernet, I will delete this repository.
