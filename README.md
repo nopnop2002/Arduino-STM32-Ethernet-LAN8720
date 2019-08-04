@@ -11,8 +11,8 @@ When STM become officially supports external PHY Ethernet, I will delete this re
 
 # Hardware requirements
 
-STM32F407 Development Board.   
-LAN8720 PHY module.   
+STM32F407 Development Board. About $8 for aliexpress/eBay.   
+LAN8720 PHY module. About $2 for aliexpress/eBay.   
 STM32 NUCLEO Board. Because we need STLink V2.1.   
 
 ![LAN8720-2](https://user-images.githubusercontent.com/6020549/62419501-80a64d00-b6bc-11e9-9cc1-9293446bec45.JPG)
