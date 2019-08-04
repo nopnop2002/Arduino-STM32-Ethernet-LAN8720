@@ -1,6 +1,6 @@
 # STM32Ethernet_LAN8720
-STM32 Ethernet supports only LAN8742A.   
-Other PHYs are not supported.   
+
+STM provides an Ethernet library for Arduino_Core_STM32, but it supports only LAN8742A.   
 But with a little change, You can use LAN8720 PHY with STM32F407.
 
 __Note__   
