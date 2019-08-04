@@ -41,7 +41,7 @@ File location is Documents\ArduinoData\packages\STM32\hardware\stm32\1.6.1\syste
 
 # Wireing
 
-|LAN8720 module|---|STM32F407|
+|LAN8720 PHY|---|STM32F407|
 |:-:|:-:|:-:|
 |TX1|---|PB_13|
 |TX_EN|---|PC_11|
