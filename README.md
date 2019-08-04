@@ -14,6 +14,8 @@ STM32F407 Development Board.
 LAN8720 PHY module.   
 STM32 NUCLEO Board. Because we need STLink V2.1.   
 
+![LAN8720-2](https://user-images.githubusercontent.com/6020549/62419501-80a64d00-b6bc-11e9-9cc1-9293446bec45.JPG)
+
 # Software requirements
 
 STM32 core support for Arduino.   
