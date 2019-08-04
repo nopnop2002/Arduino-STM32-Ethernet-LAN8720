@@ -76,6 +76,8 @@ Connect the NUCLEO SWD port to the STM32F407.
 |GND|---|GND|
 |+3.3V|---|+3.3V|
 
+Choose Upload method "STM32CubeProgrammer(SWD)"
+
 # Serial monitor
 
 You need to use a USB-TTL converter to display the serial output.   
