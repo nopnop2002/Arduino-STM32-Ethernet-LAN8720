@@ -19,6 +19,8 @@ STM32 NUCLEO Board. Because we need STLink V2.1.
 
 ![LAN8720-11](https://user-images.githubusercontent.com/6020549/62419879-2362c980-b6c5-11e9-8bd9-0fc0ef1444b0.JPG)
 
+![LAN8720-21](https://user-images.githubusercontent.com/6020549/62815224-ca29e880-bb51-11e9-9197-a6f8a1870501.JPG)
+
 # Software requirements
 
 STM32 core support for Arduino.   
