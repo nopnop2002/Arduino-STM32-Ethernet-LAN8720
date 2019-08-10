@@ -49,8 +49,8 @@ File location is Documents\ArduinoData\packages\STM32\hardware\stm32\1.6.1\syste
 |LAN8720 PHY|---|STM32F407|
 |:-:|:-:|:-:|
 |TX1|---|PB_13|
-|TX_EN|---|PC_11|
-|TX0|---|PC_12|
+|TX_EN|---|PB_11|
+|TX0|---|PB_12|
 |RX0|---|PC_4|
 |RX1|---|PC_5|
 |nINT/RETCLK|---|PA_1|
