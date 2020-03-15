@@ -34,7 +34,7 @@ https://github.com/stm32duino/LwIP
 
 # Library update
 You have to update your local file.   
-File location is Documents\ArduinoData\packages\STM32\hardware\stm32\1.6.1\system\STM32F4xx.
+File location is Documents\ArduinoData\packages\STM32\hardware\stm32\{Version}\system\STM32F4xx.
 
 [stm32f4xx_hal_conf_default.h](https://github.com/stm32duino/Arduino_Core_STM32/blob/85fd492c15a87048086e7e82318c555fb6410a41/system/STM32F4xx/stm32f4xx_hal_conf_default.h#L233-L273)
 
