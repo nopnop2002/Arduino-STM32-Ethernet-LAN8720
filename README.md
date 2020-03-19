@@ -80,6 +80,8 @@ Connect the NUCLEO SWD port to the STM32F407.
 
 Choose Upload method "STM32CubeProgrammer(SWD)"
 
+__If another BootLoader has already been written to STM32, connection of nSRTS pin and RESET pin is required.__
+
 # Serial monitor
 
 You need to use a USB-TTL converter to display the serial output.   
