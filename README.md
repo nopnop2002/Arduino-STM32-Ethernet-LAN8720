@@ -75,13 +75,13 @@ Connect the NUCLEO SWD port to the STM32F407.
 |:-:|:-:|:-:|
 |SWDIO|---|PA_13|
 |SWCLK|---|PA_14|
-|nRST|---|RESET(*1)|
+|nRST|---|RESET(Note)|
 |GND|---|GND|
 |+3.3V|---|+3.3V|
 
 Choose Upload method "STM32CubeProgrammer(SWD)"
 
-__*1   
+__Note   
 __If another BootLoader has already been written to STM32, connection of nRTS pin and RESET pin is required.__
 
 # Serial monitor
