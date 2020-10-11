@@ -13,7 +13,7 @@ When STM become officially supports external PHY Ethernet, I will delete this re
 
 - STM32F407VET6/VGT6 Development Board. About $10 for aliexpress/eBay.   
 - LAN8720 PHY module. About $2 for aliexpress/eBay.   
-- STM32 NUCLEO Board. Because we need STLink V2.1.   
+- STM32 NUCLEO Board. Because we need STLink V2.1 for farmware writting.   
 
 ![LAN8720-2](https://user-images.githubusercontent.com/6020549/62419501-80a64d00-b6bc-11e9-9cc1-9293446bec45.JPG)
 
