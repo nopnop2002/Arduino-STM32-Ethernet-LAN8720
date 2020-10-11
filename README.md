@@ -11,9 +11,9 @@ When STM become officially supports external PHY Ethernet, I will delete this re
 
 # Hardware requirements
 
-STM32F407VET6/VGT6 Development Board. About $10 for aliexpress/eBay.   
-LAN8720 PHY module. About $2 for aliexpress/eBay.   
-STM32 NUCLEO Board. Because we need STLink V2.1.   
+- STM32F407VET6/VGT6 Development Board. About $10 for aliexpress/eBay.   
+- LAN8720 PHY module. About $2 for aliexpress/eBay.   
+- STM32 NUCLEO Board. Because we need STLink V2.1.   
 
 ![LAN8720-2](https://user-images.githubusercontent.com/6020549/62419501-80a64d00-b6bc-11e9-9cc1-9293446bec45.JPG)
 
@@ -23,13 +23,13 @@ STM32 NUCLEO Board. Because we need STLink V2.1.
 
 # Software requirements
 
-STM32 core support for Arduino.   
+- STM32 core support for Arduino.   
 https://github.com/stm32duino/Arduino_Core_STM32
 
-Arduino library to support Ethernet for STM32 based board.   
+- Arduino library to support Ethernet for STM32 based board.   
 https://github.com/stm32duino/STM32Ethernet
 
-Lightweight TCP/IP stack (LwIP) is a small independent implementation of the TCP/IP protocol suite.   
+- Lightweight TCP/IP stack (LwIP) is a small independent implementation of the TCP/IP protocol suite.   
 https://github.com/stm32duino/LwIP
 
 # Library update
