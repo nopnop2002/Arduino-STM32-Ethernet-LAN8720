@@ -79,11 +79,11 @@ Connect the NUCLEO SWD port to the STM32F407.
 |GND|---|GND|
 |+3.3V|---|+3.3V|
 
+__(*1)If a non-standard BootLoader has already been written to STM32, connection of nRTS pin and RESET pin is required.__
+
 Choose Tool->Upload method "STM32CubeProgrammer(SWD)"
 
 ![LAN8720-Arduino](https://user-images.githubusercontent.com/6020549/97854256-8e71d480-1d3c-11eb-9f07-9bee9e9c5879.JPG)
-
-__(*1)If a non-standard BootLoader has already been written to STM32, connection of nRTS pin and RESET pin is required.__
 
 # Serial monitor
 
