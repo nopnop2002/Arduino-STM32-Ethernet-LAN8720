@@ -79,7 +79,7 @@ Connect the NUCLEO SWD port to the STM32F407.
 |GND|---|GND|
 |+3.3V|---|+3.3V|
 
-Choose Upload method "STM32CubeProgrammer(SWD)"
+Choose Tool->Upload method "STM32CubeProgrammer(SWD)"
 
 ![LAN8720-Arduino](https://user-images.githubusercontent.com/6020549/97854256-8e71d480-1d3c-11eb-9f07-9bee9e9c5879.JPG)
 
