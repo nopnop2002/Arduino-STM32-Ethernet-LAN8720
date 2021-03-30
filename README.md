@@ -83,7 +83,7 @@ __(*1)If a non-standard BootLoader has already been written to STM32, connection
 
 Choose Tool->Upload method "STM32CubeProgrammer(SWD)"
 
-![LAN8720-Arduino](https://user-images.githubusercontent.com/6020549/97854256-8e71d480-1d3c-11eb-9f07-9bee9e9c5879.JPG)
+![LAN8720-Arduino](https://user-images.githubusercontent.com/6020549/113068357-20e9a780-91f9-11eb-92fd-927b48f96090.JPG)
 
 # Serial monitor
 
