@@ -96,3 +96,6 @@ You need to use a USB-TTL converter to display the serial output.
 |TX|---|PA_9|
 |GND|---|GND|
 
+# Other examples
+There is other examples provided by STM.   
+https://github.com/stm32duino/STM32Ethernet/tree/main/examples
