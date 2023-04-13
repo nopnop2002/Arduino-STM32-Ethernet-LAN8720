@@ -33,6 +33,7 @@ https://github.com/stm32duino/STM32Ethernet
 ___Note for library name___   
 The library name is ```STM32Ethernet``` when installed using the zip file.   
 The library name is ```STM32duino_STM32Ethernet``` when installed using the library manager.   
+After installing using the zip file, Updating using Library Manager will result in a duplicate library.   
 
 - Lightweight TCP/IP stack (LwIP) is a small independent implementation of the TCP/IP protocol suite.   
 https://github.com/stm32duino/LwIP   
