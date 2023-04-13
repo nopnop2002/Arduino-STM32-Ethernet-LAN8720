@@ -30,13 +30,18 @@ https://github.com/stm32duino/Arduino_Core_STM32
 
 - Arduino library to support Ethernet for STM32 based board.   
 https://github.com/stm32duino/STM32Ethernet
+___Note for library name___   
+The library name is ```STM32Ethernet``` when installed using the zip file.   
+The library name is ```STM32duino_STM32Ethernet``` when installed using the library manager.   
 
 - Lightweight TCP/IP stack (LwIP) is a small independent implementation of the TCP/IP protocol suite.   
 https://github.com/stm32duino/LwIP
 
 # Library update
 You have to update your local file.   
-File location is Documents\ArduinoData\packages\STM32\hardware\stm32\{Version}\system\STM32F4xx.
+The file location is ```C:\Users\user\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.5.0\system\STM32F4xx```.   
+___The file location may vary depending on your Preferences.___   
+Please look for ```stm32f4xx_hal_conf_default.h```.   
 
 [stm32f4xx_hal_conf_default.h](https://github.com/stm32duino/Arduino_Core_STM32/blob/85fd492c15a87048086e7e82318c555fb6410a41/system/STM32F4xx/stm32f4xx_hal_conf_default.h#L233-L273)
 
