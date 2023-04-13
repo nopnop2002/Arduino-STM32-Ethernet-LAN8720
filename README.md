@@ -34,10 +34,12 @@ https://github.com/stm32duino/STM32Ethernet
 - Lightweight TCP/IP stack (LwIP) is a small independent implementation of the TCP/IP protocol suite.   
 https://github.com/stm32duino/LwIP   
 
+![Arduino-STM32-Ethernet-LAN8720](https://user-images.githubusercontent.com/6020549/231807929-921f1c4d-bef0-4e8f-bd8b-bc0f0f76c67b.jpg)
+
 # Library update
 You have to update your local file.   
-The file location is ```C:\Users\user\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.5.0\system\STM32F4xx```.   
-___The file location may vary depending on your Preferences.___   
+The file location is ```C:\Users\user\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.1.0\system\STM32F4xx```.   
+___The file location may vary depending on core library version.___   
 Please look for ```stm32f4xx_hal_conf_default.h```.   
 
 [stm32f4xx_hal_conf_default.h](https://github.com/stm32duino/Arduino_Core_STM32/blob/85fd492c15a87048086e7e82318c555fb6410a41/system/STM32F4xx/stm32f4xx_hal_conf_default.h#L233-L273)
