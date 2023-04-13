@@ -21,11 +21,26 @@
 #include <LwIP.h>
 #include <STM32Ethernet.h>
 
-
 // Initialize the Ethernet client library
 // with the IP address and port of the server
 // that you want to connect to (port 80 is default for HTTP):
 EthernetClient client;
+
+// Last Logging Time (MilliSecond)
+unsigned long lastLoggingTime = 0;
+
+void printIPAddress()
+{
+  Serial.print("My IP address: ");
+  for (byte thisByte = 0; thisByte < 4; thisByte++) {
+    // print the value of each byte of the IP address:
+    Serial.print(Ethernet.localIP()[thisByte], DEC);
+    if (thisByte < 3) Serial.print(".");
+  }
+
+  Serial.println();
+}
+
 
 void setup() {
   // Open serial communications and wait for port to open:
@@ -44,6 +59,7 @@ void setup() {
   }
   // print your local IP address:
   printIPAddress();
+  lastLoggingTime = millis();
 }
 
 void loop() {
@@ -59,10 +75,6 @@ void loop() {
       //renewed success
       Serial.println("Renewed success");
 
-      //print your local IP address:
-      printIPAddress();
-      break;
-
     case 3:
       //rebind fail
       Serial.println("Error: rebind fail");
@@ -72,25 +84,18 @@ void loop() {
       //rebind success
       Serial.println("Rebind success");
 
-      //print your local IP address:
-      printIPAddress();
-      break;
-
     default:
       //nothing happened
       break;
 
-  }
-}
+  } // end swich
 
-void printIPAddress()
-{
-  Serial.print("My IP address: ");
-  for (byte thisByte = 0; thisByte < 4; thisByte++) {
-    // print the value of each byte of the IP address:
-    Serial.print(Ethernet.localIP()[thisByte], DEC);
-    if (thisByte < 3) Serial.print(".");
+  unsigned long now = millis();
+  if ( (now - lastLoggingTime) < 0) {
+    lastLoggingTime = now;
   }
-
-  Serial.println();
+  if ( (now - lastLoggingTime) > 1000) {  
+     lastLoggingTime = now;
+     printIPAddress();
+  }
 }
