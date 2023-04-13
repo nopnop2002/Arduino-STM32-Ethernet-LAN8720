@@ -26,21 +26,10 @@ When STM become officially supports external PHY Ethernet, I will delete this re
 # Software requirements
 
 - Arduino core support for STM32 based boards.   
-Old name is STM32 core support for Arduino.   
 https://github.com/stm32duino/Arduino_Core_STM32   
-___Note for package name___   
-Since version 2.0, Package name changed from ```STM32``` to ```STMicroelectronics```.   
-The location of the package has changed accordingly.   
-Previously .....\packages\STM\hardware\.....   
-Currently .....\packages\STMicroelectronics\hardware\.....   
-Updating version 1.9 using Boards Manager leaves the old packages behind.   
 
 - Arduino library to support Ethernet for STM32 based board.   
 https://github.com/stm32duino/STM32Ethernet   
-___Note for library name___   
-The library name is ```STM32Ethernet``` when installed using the zip file.   
-The library name is ```STM32duino_STM32Ethernet``` when installed using the library manager.   
-After installing using the zip file, Updating using Library Manager will result in a duplicate library.   
 
 - Lightweight TCP/IP stack (LwIP) is a small independent implementation of the TCP/IP protocol suite.   
 https://github.com/stm32duino/LwIP   
