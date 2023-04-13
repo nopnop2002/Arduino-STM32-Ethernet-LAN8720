@@ -78,6 +78,7 @@ STM32 NUCLEO provides a on-board STLINK-V2.1 USB interface.
 Actually the board has two STM32 chips. One is the target of the demo board, and the other is the STLINK.   
 This STLINK-V2.1 can be used as programmer and debugger for external targets.   
 Remove the two jumpers from CN2, and place them at the two outermost empty jumper pins marked CN11 and CN12.   
+SWD port pinmap for using the Nucleo as a programming device can be found [here](https://os.mbed.com/questions/7974/F401RE-Cut-off-ST-LINK/).   
 
 Connect the NUCLEO SWD port to the STM32F407.   
 
@@ -104,7 +105,7 @@ You need to use a USB-TTL converter to display the serial output.
 |TX|---|PA_9|
 |GND|---|GND|
 
-___Note for Virtual COM port___
+___Note for Virtual COM port___   
 STM32F407 can use a Virtual COM port.   
 If you enable Virtual COM port, you can use the USB port as a serial port.   
 But Ethnernet and Virtual COM port cannot be used at the same time.   
