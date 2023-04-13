@@ -74,10 +74,10 @@ Please look for ```stm32f4xx_hal_conf_default.h```.
 
 # How to flash
 
-STM32 NUCLEO provides a on-board STLINK-V2-1 USB interface.
-Actually the board has two STM32 chips. One is the target of the demo board, and the other is the STLINK.
-This STLINK-V2-1 can be used as programmer and debugger for external targets.
-Remove the two jumpers from CN2, and place them at the two outermost empty jumper pins marked CN11 and CN12.
+STM32 NUCLEO provides a on-board STLINK-V2.1 USB interface.   
+Actually the board has two STM32 chips. One is the target of the demo board, and the other is the STLINK.   
+This STLINK-V2.1 can be used as programmer and debugger for external targets.   
+Remove the two jumpers from CN2, and place them at the two outermost empty jumper pins marked CN11 and CN12.   
 
 Connect the NUCLEO SWD port to the STM32F407.   
 
