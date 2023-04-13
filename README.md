@@ -25,7 +25,8 @@ When STM become officially supports external PHY Ethernet, I will delete this re
 
 # Software requirements
 
-- Arduino core support for STM32 based boards. Old name is STM32 core support for Arduino.   
+- Arduino core support for STM32 based boards.   
+Old name is STM32 core support for Arduino.   
 https://github.com/stm32duino/Arduino_Core_STM32   
 ___Note for package name___   
 Package name changed from ```STM32``` to ```STMicroelectronics```.   
