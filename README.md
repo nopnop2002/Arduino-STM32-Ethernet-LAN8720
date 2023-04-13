@@ -32,6 +32,7 @@ Package name changed from ```STM32``` to ```STMicroelectronics```.
 The location of the package has changed accordingly.   
 Previously .....\packages\STM\hardware\.....   
 Currently .....\packages\STMicroelectronics\hardware\.....   
+Updating using Boards Manager leaves the old packages behind.   
 
 - Arduino library to support Ethernet for STM32 based board.   
 https://github.com/stm32duino/STM32Ethernet   
