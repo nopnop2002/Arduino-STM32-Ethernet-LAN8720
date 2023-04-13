@@ -29,11 +29,11 @@ When STM become officially supports external PHY Ethernet, I will delete this re
 Old name is STM32 core support for Arduino.   
 https://github.com/stm32duino/Arduino_Core_STM32   
 ___Note for package name___   
-Package name changed from ```STM32``` to ```STMicroelectronics```.   
+Since version 2.0, Package name changed from ```STM32``` to ```STMicroelectronics```.   
 The location of the package has changed accordingly.   
 Previously .....\packages\STM\hardware\.....   
 Currently .....\packages\STMicroelectronics\hardware\.....   
-Updating using Boards Manager leaves the old packages behind.   
+Updating version 1.9 using Boards Manager leaves the old packages behind.   
 
 - Arduino library to support Ethernet for STM32 based board.   
 https://github.com/stm32duino/STM32Ethernet   
