@@ -27,6 +27,8 @@ When STM become officially supports external PHY Ethernet, I will delete this re
 
 - STM32 core support for Arduino.   
 https://github.com/stm32duino/Arduino_Core_STM32   
+___Note for board name___   
+Board name changed from ```STM32``` to ```STMicroelectronics```.   
 
 - Arduino library to support Ethernet for STM32 based board.   
 https://github.com/stm32duino/STM32Ethernet   
