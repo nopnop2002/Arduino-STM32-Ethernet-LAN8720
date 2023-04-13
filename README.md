@@ -13,8 +13,8 @@ When STM become officially supports external PHY Ethernet, I will delete this re
 
 # Hardware requirements
 
-- STM32F407VET6/VGT6 Development Board. About $10 for aliexpress/eBay.   
-- LAN8720 PHY module. About $2 for aliexpress/eBay.   
+- STM32F407VET6/VGT6 Development Board. About $10 for AliExpress/eBay.   
+- LAN8720 PHY module. About $2 for AliExpress/eBay.   
 - STM32 NUCLEO Board. Because we need STLink V2.1 for farmware writting.   
 
 ![LAN8720-2](https://user-images.githubusercontent.com/6020549/62419501-80a64d00-b6bc-11e9-9cc1-9293446bec45.JPG)
@@ -30,6 +30,10 @@ https://github.com/stm32duino/Arduino_Core_STM32
 
 - Arduino library to support Ethernet for STM32 based board.   
 https://github.com/stm32duino/STM32Ethernet   
+___Note for library name___   
+When installed using the ZIP file, it will be ```STM32Ethernet```.   
+When installed using the Library Manager, it will be ```STM32duino_STM32Ethernet```.   
+Installing using the ZIP file and then updating using the Library Manager will result in duplicate libraries.   
 
 - Lightweight TCP/IP stack (LwIP) is a small independent implementation of the TCP/IP protocol suite.   
 https://github.com/stm32duino/LwIP   
@@ -99,6 +103,13 @@ You need to use a USB-TTL converter to display the serial output.
 |:-:|:-:|:-:|
 |TX|---|PA_9|
 |GND|---|GND|
+
+___Note for Virtual COM port___
+STM32F407 can use a Virtual COM port.   
+If you enable Virtual COM port, you can use the USB port as a serial port.   
+But Ethnernet and Virtual COM port cannot be used at the same time.   
+Something is probably in conflict.   
+Don't use USB Support.   
 
 # Other examples
 There is other examples provided by STM.   
