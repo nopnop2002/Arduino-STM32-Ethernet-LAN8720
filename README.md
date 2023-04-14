@@ -38,7 +38,7 @@ Installing using the ZIP file and then updating using the Library Manager will r
 - Lightweight TCP/IP stack (LwIP) is a small independent implementation of the TCP/IP protocol suite.   
 https://github.com/stm32duino/LwIP   
 
-![Arduino-STM32-Ethernet-LAN8720](https://user-images.githubusercontent.com/6020549/231807929-921f1c4d-bef0-4e8f-bd8b-bc0f0f76c67b.jpg)
+![Arduino-STM32-Ethernet-LAN8720](https://user-images.githubusercontent.com/6020549/231913627-4294b712-bde5-4735-8569-46199f85e8d9.jpg)
 
 # Library update
 You have to update your local file.   
