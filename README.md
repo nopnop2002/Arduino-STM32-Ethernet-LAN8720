@@ -27,6 +27,7 @@ When STM become officially supports external PHY Ethernet, I will delete this re
 
 - Arduino core support for STM32 based boards.   
 https://github.com/stm32duino/Arduino_Core_STM32   
+When you update the core library, ___you will need to library modify again.___   
 
 - Arduino library to support Ethernet for STM32 based board.   
 https://github.com/stm32duino/STM32Ethernet   
@@ -40,8 +41,8 @@ https://github.com/stm32duino/LwIP
 
 ![Arduino-STM32-Ethernet-LAN8720](https://user-images.githubusercontent.com/6020549/231913627-4294b712-bde5-4735-8569-46199f85e8d9.jpg)
 
-# Library update
-You have to update your local file.   
+# Library modify
+You have to modify your local file.   
 The file location is ```C:\Users\user\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.1.0\system\STM32F4xx```.   
 ___The file location may vary depending on core library version.___   
 Please look for ```stm32f4xx_hal_conf_default.h```.   
