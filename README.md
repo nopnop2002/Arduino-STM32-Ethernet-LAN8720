@@ -28,6 +28,9 @@ When STM become officially supports external PHY Ethernet, I will delete this re
 - Arduino core support for STM32 based boards.   
 https://github.com/stm32duino/Arduino_Core_STM32   
 When you update the core library, ___you will need to library modify again.___   
+___Note for Core version___   
+This project cannot be built with core version 2.3 or higher.   
+STM plans to fix this in version 2.6.   
 
 - Arduino library to support Ethernet for STM32 based board.   
 https://github.com/stm32duino/STM32Ethernet   
