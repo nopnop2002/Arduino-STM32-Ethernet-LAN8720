@@ -112,7 +112,7 @@ You need to use a USB-TTL converter to display the serial output.
 ___Note for Virtual COM port___   
 STM32F407 can use a Virtual COM port.   
 If you enable Virtual COM port, you can use the USB port as a serial port.   
-But Ethnernet and Virtual COM port cannot be used at the same time.   
+But Ethernet and Virtual COM port cannot be used at the same time.   
 Something is probably in conflict.   
 Don't use USB Support.   
 
