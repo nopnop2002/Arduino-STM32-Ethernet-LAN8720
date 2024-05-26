@@ -112,6 +112,9 @@ __(*1)If a non-standard BootLoader has already been written to STM32, connection
 
 Choose Tool->Upload method "STM32CubeProgrammer(SWD)"
 
+__Please note the board part number.__   
+Some boards do not support Ethernet.   
+
 ![LAN8720-Arduino](https://user-images.githubusercontent.com/6020549/113068815-07952b00-91fa-11eb-8e88-1f7aa6a9b79a.JPG)
 
 # Serial monitor
