@@ -26,6 +26,7 @@ When STM become officially supports external PHY Ethernet, I will delete this re
 # Software requirements
 - Arduino IDE V1   
 I used V1.8.19   
+There is a possibility that it cannot be compiled with V2.   
 
 ![ArduinoIDE_V1 8 19](https://github.com/nopnop2002/Arduino-STM32-Ethernet-LAN8720/assets/6020549/d0211c18-b77e-436f-b931-8a9759f833eb)
 
