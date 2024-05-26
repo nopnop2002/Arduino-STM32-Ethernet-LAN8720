@@ -24,6 +24,10 @@ When STM become officially supports external PHY Ethernet, I will delete this re
 ![LAN8720-21](https://user-images.githubusercontent.com/6020549/62815224-ca29e880-bb51-11e9-9197-a6f8a1870501.JPG)
 
 # Software requirements
+- Arduino IDE V1   
+I used V1.8.19   
+
+![ArduinoIDE_V1 8 19](https://github.com/nopnop2002/Arduino-STM32-Ethernet-LAN8720/assets/6020549/d0211c18-b77e-436f-b931-8a9759f833eb)
 
 - Arduino core support for STM32 based boards.   
 https://github.com/stm32duino/Arduino_Core_STM32   
@@ -31,6 +35,8 @@ When you update the core library, ___you will need to library modify again.___
 ___Note for Core version___   
 This project cannot be built with core version 2.3 or higher.   
 STM plans to fix this in version 2.6.   
+
+![STM32_Core_2 2 0](https://github.com/nopnop2002/Arduino-STM32-Ethernet-LAN8720/assets/6020549/7cfa7c67-f9d0-4aa5-8b1c-85e74eca0ef0)
 
 - Arduino library to support Ethernet for STM32 based board.   
 https://github.com/stm32duino/STM32Ethernet   
