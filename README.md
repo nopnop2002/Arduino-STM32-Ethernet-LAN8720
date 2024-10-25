@@ -37,7 +37,7 @@ When STM become officially supports external PHY Ethernet, I will delete this re
  Requires core version 2.3 or higher.   
  Core version 2.8 or later requires Arduino IDE 2.x.   
  I used version 2.7.1.   
- This is the last version available for Arduino IDE 1.x.   
+ This is the final version available for Arduino IDE 1.x.   
  ![STM32_Core_2 7 1](https://github.com/user-attachments/assets/e135c6b2-61f5-4ac8-a4e5-8878a29a2be4)
 
 - Arduino library to support Ethernet for STM32 based board.   
