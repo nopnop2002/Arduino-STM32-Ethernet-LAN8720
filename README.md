@@ -134,5 +134,5 @@ Don't use USB Support.
 
 # Other examples
 There is other examples provided by STM.   
-To use these, hal_conf_extra.h is required.   
+To use these you need to add hal_conf_extra.h.   
 https://github.com/stm32duino/STM32Ethernet/tree/main/examples
