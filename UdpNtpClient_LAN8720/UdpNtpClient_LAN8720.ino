@@ -24,17 +24,50 @@
 #include <LwIP.h>
 #include <STM32Ethernet.h>
 #include <EthernetUdp.h>
+#include <TimeLib.h>     // https://github.com/PaulStoffregen/Time
 
-unsigned int localPort = 8888;       // local port to listen for UDP packets
+// Your NTP Server
+#define NTP_SERVER      "pool.ntp.org"
+// Your local time zone
+#define TIME_ZONE       9            
+// local port to listen for UDP packets
+#define LOCAL_PORT      8888
 
-char timeServer[] = "time.nist.gov"; // time.nist.gov NTP server
-
-const int NTP_PACKET_SIZE = 48; // NTP time stamp is in the first 48 bytes of the message
-
+// NTP time stamp is in the first 48 bytes of the message
+#define NTP_PACKET_SIZE 48
 byte packetBuffer[ NTP_PACKET_SIZE]; //buffer to hold incoming and outgoing packets
 
 // A UDP instance to let us send and receive packets over UDP
 EthernetUDP Udp;
+
+// Get Day of the week string [Sun,Mon....]
+char * dow2char(byte days) {
+  char *dayOfWeek[] = {"Sun","Mon","Tue","Wed","Thu","Fri","Sat"};
+  return dayOfWeek[days];
+}
+
+// Get Day of the week [0-Sunday, 1-Monday etc.]
+uint8_t get_dow(unsigned long t) {
+    return ((t / 86400) + 4) % 7;
+}
+
+void showTime(char * title, time_t timet, char * dow) {
+   Serial.print(title);
+   Serial.print(year(timet));
+   Serial.print("/");
+   Serial.print(month(timet));
+   Serial.print("/");
+   Serial.print(day(timet));
+   Serial.print(" ");
+   Serial.print(hour(timet));
+   Serial.print(":");
+   Serial.print(minute(timet));
+   Serial.print(":");
+   Serial.print(second(timet));
+   Serial.print(" [");
+   Serial.print(dow);
+   Serial.println("]");
+}
 
 void setup() {
   // Open serial communications and wait for port to open:
@@ -61,13 +94,12 @@ void setup() {
   Serial.println(Ethernet.gatewayIP());
   Serial.print("dnsServerIP: ");
   Serial.println(Ethernet.dnsServerIP());
-
   
-  Udp.begin(localPort);
+  Udp.begin(LOCAL_PORT);
 }
 
 void loop() {
-  sendNTPpacket(timeServer); // send an NTP packet to a time server
+  sendNTPpacket(NTP_SERVER); // send an NTP packet to a time server
 
   // wait to see if a reply is available
   delay(1000);
@@ -83,34 +115,28 @@ void loop() {
     // combine the four bytes (two words) into a long integer
     // this is NTP time (seconds since Jan 1 1900):
     unsigned long secsSince1900 = highWord << 16 | lowWord;
-    Serial.print("Seconds since Jan 1 1900 = ");
-    Serial.println(secsSince1900);
+    //Serial.print("Seconds since Jan 1 1900 = ");
+    //Serial.println(secsSince1900);
 
-    // now convert NTP time into everyday time:
-    Serial.print("Unix time = ");
-    // Unix time starts on Jan 1 1970. In seconds, that's 2208988800:
+    // now convert NTP time into UNIX time:
+    // UNIX time starts on Jan 1 1970. In seconds, that's 2208988800:
     const unsigned long seventyYears = 2208988800UL;
     // subtract seventy years:
-    unsigned long epoch = secsSince1900 - seventyYears;
-    // print Unix time:
+    unsigned long epoch = secsSince1900 - seventyYears; 
+    Serial.print("Unix time = ");
     Serial.println(epoch);
 
+    // Greenwich Mean Time
+    uint8_t DayOfWeek = get_dow(epoch); 
+    showTime("The UTC time is ", (time_t)epoch, dow2char(DayOfWeek));
 
-    // print the hour, minute and second:
-    Serial.print("The UTC time is ");       // UTC is the time at Greenwich Meridian (GMT)
-    Serial.print((epoch  % 86400L) / 3600); // print the hour (86400 equals secs per day)
-    Serial.print(':');
-    if (((epoch % 3600) / 60) < 10) {
-      // In the first 10 minutes of each hour, we'll want a leading '0'
-      Serial.print('0');
+    // Local Time
+    if (TIME_ZONE != 0) {
+      unsigned long epochLocal = epoch + (TIME_ZONE * 60 * 60);
+      DayOfWeek = get_dow(epochLocal);
+      showTime("The LOCAL time is ", (time_t)epochLocal, dow2char(DayOfWeek));
     }
-    Serial.print((epoch  % 3600) / 60); // print the minute (3600 equals secs per minute)
-    Serial.print(':');
-    if ((epoch % 60) < 10) {
-      // In the first 10 seconds of each minute, we'll want a leading '0'
-      Serial.print('0');
-    }
-    Serial.println(epoch % 60); // print the second
+   
   }
   // wait ten seconds before asking for the time again
   delay(10000);

@@ -31,12 +31,11 @@ I used V1.8.19
 
 - Arduino core support for STM32 based boards.   
 https://github.com/stm32duino/Arduino_Core_STM32   
-When you update the core library, ___you will need to library modify again.___   
 ___Note for Core version___   
-This project cannot be built with core version 2.3 or higher.   
-STM plans to fix this in version 2.6.   
-
-![STM32_Core_2 2 0](https://github.com/nopnop2002/Arduino-STM32-Ethernet-LAN8720/assets/6020549/7cfa7c67-f9d0-4aa5-8b1c-85e74eca0ef0)
+Requires core version 2.3 or higher.   
+Core version 2.8 or later requires Arduino IDE 2.x.   
+I used version 2.7.1.   
+![STM32_Core_2 7 1](https://github.com/user-attachments/assets/e135c6b2-61f5-4ac8-a4e5-8878a29a2be4)
 
 - Arduino library to support Ethernet for STM32 based board.   
 https://github.com/stm32duino/STM32Ethernet   
@@ -52,7 +51,7 @@ https://github.com/stm32duino/LwIP
 
 # Library modify
 You have to modify your local file.   
-The file location is ```C:\Users\user\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.1.0\system\STM32F4xx```.   
+The file location is ```C:\Users\user\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.3.0\system\STM32F4xx```.   
 ___The file location may vary depending on core library version.___   
 Please look for ```stm32f4xx_hal_conf_default.h```.   
 
@@ -135,4 +134,5 @@ Don't use USB Support.
 
 # Other examples
 There is other examples provided by STM.   
+To use these, hal_conf_extra.h is required.   
 https://github.com/stm32duino/STM32Ethernet/tree/main/examples

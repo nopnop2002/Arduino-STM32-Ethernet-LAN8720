@@ -29,6 +29,17 @@ EthernetClient client;
 // Last Logging Time (MilliSecond)
 unsigned long lastLoggingTime = 0;
 
+void printCoreVersion()
+{
+  Serial.print("My Core version: ");
+  Serial.print(STM32_CORE_VERSION_MAJOR);
+  Serial.print(".");
+  Serial.print(STM32_CORE_VERSION_MINOR);
+  Serial.print(".");
+  Serial.print(STM32_CORE_VERSION_PATCH);
+  Serial.println();
+}
+
 void printIPAddress()
 {
   Serial.print("My IP address: ");
@@ -51,13 +62,17 @@ void setup() {
   }
 
   // start the Ethernet connection:
+  Serial.println("start the Ethernet connection");
   if (Ethernet.begin() == 0) {
     Serial.println("Failed to configure Ethernet using DHCP");
     // no point in carrying on, so do nothing forevermore:
     for (;;)
       ;
   }
-  // print your local IP address:
+
+  // print my core version
+  printCoreVersion();
+  // print my local IP address
   printIPAddress();
   lastLoggingTime = millis();
 }

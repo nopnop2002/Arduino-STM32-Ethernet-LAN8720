@@ -1,14 +1,13 @@
 #include <LwIP.h>
 #include <STM32Ethernet.h>
-#include <EthernetUdp.h>
 #include <PubSubClient.h>
 
-#define MQTT_SERVER     "192.168.10.40"
-//#define MQTT_SERVER     "broker.mqtt-dashboard.com"
+#define MQTT_SERVER     "broker.emqx.io"
 #define MQTT_PORT       1883
-#define MQTT_TOPIC      "nopnop2002" // You can change
+#define MQTT_TOPIC      "/test/stm32" // You can change
 #define MQTT_WILL_TOPIC MQTT_TOPIC
 #define MQTT_WILL_MSG   "I am leaving..." // You can change
+#define MQTT_INTERVAL   2000
 
 EthernetClient EthClient;
 PubSubClient client(EthClient);
@@ -66,7 +65,7 @@ void loop() {
 
   long now = millis();
   if (now < lastMillis) lastMillis = now;
-  if (now - lastMillis > 10000) {
+  if (now - lastMillis > MQTT_INTERVAL) {
     lastMillis = now;
     snprintf (msg, 75, "hello world #%lu", now);
     Serial.print("Publish message: ");
