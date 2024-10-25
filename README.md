@@ -25,29 +25,27 @@ When STM become officially supports external PHY Ethernet, I will delete this re
 
 # Software requirements
 - Arduino IDE   
-I used V1.8.19   
-
-![ArduinoIDE_V1 8 19](https://github.com/nopnop2002/Arduino-STM32-Ethernet-LAN8720/assets/6020549/d0211c18-b77e-436f-b931-8a9759f833eb)
+ I used V1.8.19   
+ ![ArduinoIDE_V1 8 19](https://github.com/nopnop2002/Arduino-STM32-Ethernet-LAN8720/assets/6020549/d0211c18-b77e-436f-b931-8a9759f833eb)
 
 - Arduino core support for STM32 based boards.   
-https://github.com/stm32duino/Arduino_Core_STM32   
-___Note for Core version___   
-Requires core version 2.3 or higher.   
-Core version 2.8 or later requires Arduino IDE 2.x.   
-I used version 2.7.1.   
-![STM32_Core_2 7 1](https://github.com/user-attachments/assets/e135c6b2-61f5-4ac8-a4e5-8878a29a2be4)
+ https://github.com/stm32duino/Arduino_Core_STM32   
+ ___Note for Core version___   
+ Requires core version 2.3 or higher.   
+ Core version 2.8 or later requires Arduino IDE 2.x.   
+ I used version 2.7.1.   
+ ![STM32_Core_2 7 1](https://github.com/user-attachments/assets/e135c6b2-61f5-4ac8-a4e5-8878a29a2be4)
 
 - Arduino library to support Ethernet for STM32 based board.   
-https://github.com/stm32duino/STM32Ethernet   
-___Note for library name___   
-When installed using the ZIP file, it will be ```STM32Ethernet```.   
-When installed using the Library Manager, it will be ```STM32duino_STM32Ethernet```.   
-Installing using the ZIP file and then updating using the Library Manager will result in duplicate libraries.   
+ https://github.com/stm32duino/STM32Ethernet   
+ ___Note for library name___   
+ When installed using the ZIP file, it will be ```STM32Ethernet```.   
+ When installed using the Library Manager, it will be ```STM32duino_STM32Ethernet```.   
+ Installing using the ZIP file and then updating using the Library Manager will result in duplicate libraries.   
 
 - Lightweight TCP/IP stack (LwIP) is a small independent implementation of the TCP/IP protocol suite.   
-https://github.com/stm32duino/LwIP   
-
-![Arduino-STM32-Ethernet-LAN8720](https://user-images.githubusercontent.com/6020549/231913627-4294b712-bde5-4735-8569-46199f85e8d9.jpg)
+ https://github.com/stm32duino/LwIP   
+ ![Arduino-STM32-Ethernet-LAN8720](https://user-images.githubusercontent.com/6020549/231913627-4294b712-bde5-4735-8569-46199f85e8d9.jpg)
 
 # Library modify
 You have to modify your local file.   
