@@ -17,7 +17,7 @@ When STM become officially supports external PHY Ethernet, I will delete this re
 - LAN8720 PHY module. About $2 for AliExpress/eBay.   
 - STM32 NUCLEO Board. Because we need STLink V2.1 for farmware writting.   
 
-- Board parts number is DIYMODE STM32F407VGT.   
+- Board parts number is DIYMORE STM32F407VGT.   
 ![LAN8720-2](https://user-images.githubusercontent.com/6020549/62419501-80a64d00-b6bc-11e9-9cc1-9293446bec45.JPG)
 
 - Board parts number is Black F407VE.    
