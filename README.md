@@ -53,7 +53,7 @@ When STM become officially supports external PHY Ethernet, I will delete this re
 
 # Library modify
 You have to modify your local file.   
-The file location is ```C:\Users\user\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.3.0\system\STM32F4xx```.   
+The file location is ```C:\Users\user\AppData\Local\Arduino15\packages\STMicroelectronics\hardware\stm32\2.7.1\system\STM32F4xx```.   
 ___The file location may vary depending on core library version.___   
 Please look for ```stm32f4xx_hal_conf_default.h```.   
 
