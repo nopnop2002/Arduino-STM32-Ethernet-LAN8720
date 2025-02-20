@@ -60,20 +60,20 @@ Please look for ```stm32f4xx_hal_conf_default.h```.
 [stm32f4xx_hal_conf_default.h](https://github.com/stm32duino/Arduino_Core_STM32/blob/85fd492c15a87048086e7e82318c555fb6410a41/system/STM32F4xx/stm32f4xx_hal_conf_default.h#L233-L273)
 
 - Before change
-```
-/* Section 2: PHY configuration section */
-/* LAN8742A PHY Address*/
-#define LAN8742A_PHY_ADDRESS            0x00U
-```
+	```
+	/* Section 2: PHY configuration section */
+	/* LAN8742A PHY Address*/
+	#define LAN8742A_PHY_ADDRESS            0x00U
+	```
 
 - After change
-```
-/* Section 2: PHY configuration section */
-#if !defined  (LAN8742A_PHY_ADDRESS)
-/* LAN8742A PHY Address*/
-#define LAN8742A_PHY_ADDRESS            0x00U
-#endif
-```
+	```
+	/* Section 2: PHY configuration section */
+	#if !defined  (LAN8742A_PHY_ADDRESS)
+	/* LAN8742A PHY Address*/
+	#define LAN8742A_PHY_ADDRESS            0x00U
+	#endif
+	```
 
 # Wireing
 
