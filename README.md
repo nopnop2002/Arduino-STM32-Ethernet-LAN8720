@@ -75,7 +75,7 @@ Please look for ```stm32f4xx_hal_conf_default.h```.
 	#endif
 	```
 
-# Wireing
+# Wiring
 
 |LAN8720 PHY|---|STM32F407|
 |:-:|:-:|:-:|
